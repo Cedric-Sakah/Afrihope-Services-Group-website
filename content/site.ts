@@ -39,7 +39,7 @@ export type CoreValue = {
 export const site = {
   name: "Afrihope Group",
   legalName: "Afrihope Group",
-  motto: "Driving Innovation & Sustainable Solutions in Africa",
+  motto: "Innovating Hope, Driving Solutions",
   mottoShort: "Innovation & Sustainable Solutions",
 
   mission:
