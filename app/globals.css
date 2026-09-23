@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+/*
+ * Afrihope Group design tokens.
+ * Palette derived from the logo (amber wordmark, teal underline) — see
+ * the build brief §4. Amber and teal are accents on a neutral canvas;
+ * components should never lean on a hardcoded hex value directly.
+ */
+@theme {
+  --color-teal: #0d6e66;
+  --color-teal-deep: #084b46;
+  --color-amber: #e08a05;
+  --color-amber-bright: #f5a623;
+  --color-ink: #14181a;
+  --color-ink-muted: #6b7578;
+  --color-rule: #d9ddda;
+  --color-mist: #edf0ef;
+  --color-canvas: #ffffff;
+
+  /* Sans display (headings, UI) / serif body (long-form reading copy) */
+  --font-display: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-source-serif), ui-serif, Georgia, serif;
+
+  --radius-button: 3px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+/* Body copy measure cap, per brief §4 — apply to long-form text blocks. */
+.measure {
+  max-width: 62ch;
+}
+
+/* Visible, on-brand focus ring for keyboard users. Never remove outline
+   without replacing it — WCAG 2.1 AA requires a visible focus indicator. */
+:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Home hero load-in — the one orchestrated motion moment (brief §4).
+   prefers-reduced-motion handling above collapses these to near-instant. */
+@keyframes rule-draw {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-rule {
+  transform-origin: left;
+  animation: rule-draw 0.7s ease-out both;
+}
+
+.hero-rise {
+  animation: rise-in 0.6s ease-out both;
+}
+
+/*
+ * Photography stays full color — real photographs read as real
+ * photographs. A subtle hover lift (no color manipulation) is the only
+ * treatment on photo tiles like the home page's seven-unit filmstrip.
+ */
+.photo-tile img {
+  transition: transform 0.5s ease;
+}
+
+.photo-tile:hover img,
+.photo-tile:focus-visible img {
+  transform: scale(1.04);
+}
+
+/* Classic underline-sweep for primary nav links — a hairline that grows
+   from the left on hover/focus, in the same idiom as the rules used
+   throughout the page rather than a color-only hover state. */
+.nav-sweep {
+  position: relative;
+}
+
+.nav-sweep::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: -4px;
+  height: 1px;
+  background: var(--color-teal);
+  transition: right 0.25s ease;
+}
+
+.nav-sweep:hover::after,
+.nav-sweep:focus-visible::after {
+  right: 0;
+}
