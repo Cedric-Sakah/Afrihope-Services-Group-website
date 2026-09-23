@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
+import { Logo } from "@/components/ui/Logo";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { UnitIndex } from "@/components/sections/UnitIndex";
 import { ValueList } from "@/components/sections/ValueList";
@@ -45,20 +46,23 @@ export default function Home() {
       <section className="py-20 sm:py-28">
         <Container>
           <span aria-hidden className="hero-rule block h-1 w-24 bg-teal" />
+          <div className="hero-rise mt-8" style={{ animationDelay: "0.1s" }}>
+            <Logo className="w-fit" />
+          </div>
           <h1
             className="hero-rise mt-8 max-w-4xl font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl lg:text-6xl"
-            style={{ animationDelay: "0.1s" }}
+            style={{ animationDelay: "0.2s" }}
           >
             {site.motto}
           </h1>
           <p
             className="hero-rise measure mt-6 text-lg leading-relaxed text-ink-muted sm:text-xl"
-            style={{ animationDelay: "0.25s" }}
+            style={{ animationDelay: "0.35s" }}
           >
             {site.mission}
           </p>
 
-          <div className="hero-rise mt-8" style={{ animationDelay: "0.4s" }}>
+          <div className="hero-rise mt-8" style={{ animationDelay: "0.5s" }}>
             <Button href="/business-units">Explore our business units</Button>
           </div>
 

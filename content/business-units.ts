@@ -238,7 +238,7 @@ export const businessUnits: BusinessUnit[] = [
   },
   {
     slug: "mobility",
-    name: "Afrihope Mobility",
+    name: "Afrihope Auto Mobile",
     offering: "Car rentals",
     tagline: "Reliable vehicles, whenever and wherever you need them.",
     image: {
@@ -246,7 +246,7 @@ export const businessUnits: BusinessUnit[] = [
       alt: "A vehicle parked in a well-lit covered parking facility",
     },
     overview: [
-      "Afrihope Mobility keeps businesses, missions, and travelers moving with vehicles that show up on time and in the condition promised.",
+      "Afrihope Auto Mobile keeps businesses, missions, and travelers moving with vehicles that show up on time and in the condition promised.",
       "Whether it's a single self-drive booking or a standing corporate account, we treat vehicle reliability as the whole product — not an afterthought to a rental transaction.",
     ],
     services: [
@@ -285,7 +285,7 @@ export const businessUnits: BusinessUnit[] = [
   },
   {
     slug: "foods",
-    name: "Afrihope Foods",
+    name: "Afrihope Agribusiness",
     offering:
       "Production, branding, processing and distribution of natural foods",
     tagline: "Quality you can taste, from farm to table.",
@@ -294,7 +294,7 @@ export const businessUnits: BusinessUnit[] = [
       alt: "Fresh kale, apple, lemon, ginger, cucumber, lettuce, and celery arranged on a clean surface",
     },
     overview: [
-      "Afrihope Foods produces, processes, and distributes natural food products under a standard we control from sourcing through to the shelf.",
+      "Afrihope Agribusiness produces, processes, and distributes natural food products under a standard we control from sourcing through to the shelf.",
       "We handle production and processing in-house and manage branding and distribution as one connected chain, so wholesale buyers and distributor partners get consistent quality at the volume they need.",
     ],
     services: [
@@ -316,7 +316,7 @@ export const businessUnits: BusinessUnit[] = [
       {
         title: "Distributor & retail partnerships",
         description:
-          "Standing partnerships for distributors and retailers who want to carry the Afrihope Foods range.",
+          "Standing partnerships for distributors and retailers who want to carry the Afrihope Agribusiness range.",
       },
     ],
     servedClients: [

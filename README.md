@@ -104,8 +104,8 @@ left as clearly-marked placeholders per the build brief rather than guessed at:
   the brief's source document said "six business units" in one place but
   listed seven — seven is what's built. It also named two units
   inconsistently ("Afrihope Mobility" vs "Auto Mobile", "Afrihope Foods" vs
-  "Agri-Business") — this build standardizes on **Mobility** and **Foods**.
-  Please confirm both naming decisions with the client before launch.
+  "Agri-Business") — this build standardizes on **Auto Mobile** and
+  **Agribusiness**.
 
 ## CMS path
 

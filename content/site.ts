@@ -39,8 +39,8 @@ export type CoreValue = {
 export const site = {
   name: "Afrihope Group",
   legalName: "Afrihope Group",
-  motto: "Innovating Hope & Driving Sustainable Solutions for Africa",
-  mottoShort: "Innovating Hope, Driving Solutions",
+  motto: "Driving Innovation & Sustainable Solutions in Africa",
+  mottoShort: "Innovation & Sustainable Solutions",
 
   mission:
     "Afrihope Group exists to deliver trusted, high-quality solutions and products — from strategic consulting to everyday essentials — empowering businesses, institutions, and communities across Africa to solve real problems and thrive.",
